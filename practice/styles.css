@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(101, 101, 255);
+}
+
+.container {
+  width: 400px;
+  background-color: aquamarine;
+  border: 2px solid grey;
+  padding: 40px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.container h1 {
+  margin-bottom: 20px;
+}
+
+.container ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.hidden-text {
+  display: none;
+}
+
+.hidden-text.revealBtn {
+  display: block;
+}

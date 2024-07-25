@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stop-Watch</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: darkgray;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        width: 60%;
+        height: 250px;
+        background-color: #fff;
+        border-radius: 35px;
+        box-shadow: 0 0 3px;
+      }
+
+      #timer {
+        width: 100%;
+        font-size: 72px;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 30px;
+      }
+
+      .buttons {
+        text-align: center;
+      }
+
+      button {
+        margin: 15px 10px;
+        border: none;
+      }
+
+      button i {
+        font-size: 2rem;
+        padding: 10px;
+        color: #fff;
+        width: 50px;
+      }
+
+      #play {
+        background-color: green;
+      }
+
+      #pause {
+        background-color: orange;
+      }
+
+      #reset {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="timer">00:00:00</div>
+      <div class="buttons">
+        <button id="startStopBtn">
+          <i class="fa-solid fa-play" id="play"></i>
+        </button>
+        <button id="resetBtn">
+          <i class="fa-solid fa-arrow-rotate-left" id="reset"></i>
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
